@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+  	<style type="text/css">
+  	html,
+	body {
+		background-image: url(https://progameguides.com/wp-content/uploads/2017/12/fortnite-outfit-skull-trooper.jpg);
+		background-repeat: no-repeat;
+		height: 100%;
+		background-size: 100% 100%;
+	}
+	.card{
+		opacity: 0.95;
+	}
+	</style>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>free vbucks!</title>
+    <link rel="icon" href="https://img.icons8.com/ios/50/000000/v-bucks.png" sizes="32x32" type="image/png">
+
+  </head>
+  <body id = "main-body">
+
+	<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="ModalLabel">Help out john wick by completing an ofer belo</h5>
+	      </div>
+	      <div class="modal-body">
+	        <a href="https://www.reddit.com/r/apexlegends/" class="btn btn-info btn-block btn-lg" role="button" style="margin-bottom: 10px">100$ cosco gif crad</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+  	<br></br>
+  	<br></br> 	
+
+  	<div class="card text-center">
+		<div class="card-header">
+		   	no human verification
+		</div>
+			<div class="card-body">
+		    	<h5 class="card-title">Free Vbuck Generator</h5>
+
+				<form class="form-signin">
+					<img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+					<input oninput="enu(true)" onemptied="enu(false)" id="Username" class="form-control" placeholder="Username" required="" autofocus="" style = "margin-bottom: 10px">
+					<input oninput="ena(true)" onemptied="ena(false)" type="number" id="Vbucks" class="form-control" placeholder="Vbucks" required="" style = "margin-bottom: 10px">
+
+				  	<div class="dropright" required = "" style = "margin-bottom: 10px">
+						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top: 10px">
+				    		Select Platform
+				  		</button>
+					  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    	<button class="dropdown-item" type="button" onclick="pp('mobile','dropdownMenuButton')">mobile</button>
+					    	<button class="dropdown-item" type="button" onclick="pp('pc','dropdownMenuButton')">pc</button>
+					    	<button class="dropdown-item" type="button" onclick="pp('console','dropdownMenuButton')">console</button>
+					  	</div>
+					</div>
+
+				 	<button onclick="fakeVeri('fakelog', 0)" class="btn btn-primary" type = "button">generate vbucks</button>
+				</form>
+
+		  	</div>
+	</div>
+
+	<div class="card">
+		<div class="card-body" id = "fakelog">
+	    	
+		</div>
+		<div class="card-footer text-muted">
+		    19028830 vbucks generated
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		var flines = ["<span style='color:green'>connecting to user</span>", "hacking fortnite", "Owo theres a firewall", 
+			"attempting user autherntication", "<span style='color:red'>automatic user authentaicaton failed</span>", 
+			"<span style='color:red'>john wick needs your help to scale the fire wall</span>", "redirecting..."];
+
+		var user = false;
+		var amount = false;
+		var console = false;
+		var run = 0;
+		function close(){
+			document.getElementById("Modal").style.display = "none";
+		}
+		function enu(bol){
+			user = bol;
+		}
+		function ena(bol){
+			amount = bol;
+		}
+
+		function pp(c, b){
+			document.getElementById(b).innerHTML = c;
+			console = true;
+		}
+		function fakeVeri(c, i){
+			if(user && amount && run == i && console){
+				run++;
+				document.getElementById(c).innerHTML = document.getElementById(c).innerHTML + flines[i] + "<br>";
+				if(i < flines.length-1){
+					setTimeout(function(){
+						fakeVeri(c, i+1);
+					}, getRandomInt(200, 1000));
+				}else{
+					setTimeout(function(){
+						//window.location.assign("https://www.reddit.com/r/apexlegends/");
+						$('#Modal').modal("show");
+					}, 1000);
+				}
+			}else{
+				if(!user){
+					alert("*Owo notices you havent entered username*");
+					document.getElementById("main-body").innerHTML = document.getElementById("main-body").innerHTML;
+				}else if(!amount){
+					alert("*Owo notices you havent entered vbuck amount*");
+				}else if(!console){
+					alert("*Owo notices you havent selected the platform*");
+				}
+			}
+		}
+		function getRandomInt(min, max) {
+		    min = Math.ceil(min);
+		    max = Math.floor(max);
+		    return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+		window.onbeforeunload = function (e) {
+			
+			return "*y-you dont want my v-vbucks*\n*looks at feet and fiddles thumbs*";
+		};
+	</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

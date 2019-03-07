@@ -92,6 +92,8 @@
 		var amount = false;
 		var console = false;
 		var run = 0;
+		var msg = "*y-you dont want my v-vbucks*\n*looks at feet and fiddles thumbs*";
+		
 		function close(){
 			document.getElementById("Modal").style.display = "none";
 		}
@@ -118,6 +120,7 @@
 					setTimeout(function(){
 						//window.location.assign("https://www.reddit.com/r/apexlegends/");
 						$('#Modal').modal("show");
+						run = 0;
 					}, 1000);
 				}
 			}else{
@@ -136,10 +139,6 @@
 		    max = Math.floor(max);
 		    return Math.floor(Math.random() * (max - min + 1)) + min;
 		}
-		window.onbeforeunload = function (e) {
-			
-			return "*y-you dont want my v-vbucks*\n*looks at feet and fiddles thumbs*";
-		};
 	</script>
 
 

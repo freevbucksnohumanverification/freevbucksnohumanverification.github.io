@@ -108,6 +108,9 @@
 		}
 		function fakeVeri(c, i){
 			if(user && amount && run == i && console){
+				if(run == 0){
+					document.getElementById(c).innerHTML = "";
+				}
 				run++;
 				document.getElementById(c).innerHTML = document.getElementById(c).innerHTML + flines[i] + "<br>";
 				if(i < flines.length-1){
